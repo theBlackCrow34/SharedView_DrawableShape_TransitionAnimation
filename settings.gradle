@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='SharedView_DrawableShape_TransitionAnimation'

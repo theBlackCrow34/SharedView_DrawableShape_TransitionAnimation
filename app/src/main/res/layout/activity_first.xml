@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+
+    <LinearLayout
+        android:id="@+id/backgroundLl"
+        android:transitionName="background_linear"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/first_shape">
+
+        <ImageView
+            android:id="@+id/profileIv"
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:transitionName="profile_image"
+            android:layout_margin="10dp"
+            android:src="@drawable/profile_image"/>
+        <TextView
+            android:id="@+id/headlineTv"
+            android:transitionName="headline_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@android:color/white"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/goToBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="go to second activity"/>
+
+</RelativeLayout>
